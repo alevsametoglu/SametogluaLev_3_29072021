@@ -13,3 +13,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+@mixin forme {
+  background: #f3f3f3;
+  font-size: 1rem;
+  padding: 20px 5px;
+  text-align: center;
+}
+
+@mixin button {
+  background-image: linear-gradient(0deg, $color-primary, $color-secondary);
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.2rem;
+}

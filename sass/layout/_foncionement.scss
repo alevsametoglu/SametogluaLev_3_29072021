@@ -1,0 +1,28 @@
+ul {
+  @include grid3Column;
+  @media (max-width: 635px) {
+    grid-template-columns: 1fr;
+  }
+
+  .list-function {
+    background-color: #f3f3f3;
+    height: 60px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    @include horizontal;
+    justify-content: flex-start;
+    position: relative;
+
+    .number {
+      background-color: $color-primary;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: -30px;
+      @include horizontal;
+    }
+  }
+}

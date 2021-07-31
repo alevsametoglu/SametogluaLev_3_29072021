@@ -1,0 +1,89 @@
+h1,
+h2 {
+  font-family: Shrikhand, "cursive";
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  padding: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-block: 0;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+h4 {
+  -webkit-margin-after: 0%;
+          margin-block-end: 0%;
+  -webkit-margin-before: 0%;
+          margin-block-start: 0%;
+}
+
+h3 {
+  -webkit-margin-after: 0%;
+          margin-block-end: 0%;
+  -webkit-margin-before: 0%;
+          margin-block-start: 0%;
+}
+
+p {
+  -webkit-margin-after: 0%;
+          margin-block-end: 0%;
+  -webkit-margin-before: 0%;
+          margin-block-start: 0%;
+}
+
+@media (max-width: 635px) {
+  body {
+    margin: 0px;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 10px 30px;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: Shrikhand, "cursive";
+}
+
+footer ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  line-height: 25px;
+  padding: 5px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer a {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 10px 30px;
+  h3 {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: Shrikhand, "cursive";
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 25px;
+    padding: 5px;
+    align-items: flex-start;
+  }
+  a {
+    color: white;
+  }
+}

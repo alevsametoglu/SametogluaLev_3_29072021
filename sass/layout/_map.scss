@@ -8,5 +8,6 @@
   background-color: #fafafa;
   button {
     @include button;
+    margin: 20px;
   }
 }

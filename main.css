@@ -326,11 +326,14 @@ ul .list-function .number {
   border-radius: 20px;
   -webkit-box-shadow: rgba(197, 194, 194, 0.35) 0px 5px 15px;
           box-shadow: rgba(197, 194, 194, 0.35) 0px 5px 15px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 15px;
+  white-space: nowrap;
 }
 
 .btn-commander {

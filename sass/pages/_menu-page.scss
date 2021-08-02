@@ -44,8 +44,10 @@
       margin: 15px;
       border-radius: 20px;
       box-shadow: rgba(197, 194, 194, 0.35) 0px 5px 15px;
-      @include grid2Column;
+      display: flex;
+      justify-content: space-between;
       padding: 15px;
+      white-space: nowrap;
     }
   }
 }

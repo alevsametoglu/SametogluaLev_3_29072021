@@ -2,3 +2,11 @@ h1 {
   text-align: center;
   color: $color-title;
 }
+.linge {
+  background-color: $color-tertiary;
+  height: 5px;
+  width: 50px;
+  position: relative;
+  left: 20px;
+  top: 5px;
+}

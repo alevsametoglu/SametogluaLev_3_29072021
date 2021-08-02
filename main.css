@@ -47,15 +47,22 @@ p {
           margin-block-start: 0%;
 }
 
-@media (max-width: 635px) {
-  body {
-    margin: 0px;
-  }
+body {
+  margin: 0px;
 }
 
 h1 {
   text-align: center;
   color: black;
+}
+
+.linge {
+  background-color: #99e2d0;
+  height: 5px;
+  width: 50px;
+  position: relative;
+  left: 20px;
+  top: 5px;
 }
 
 footer {
@@ -276,6 +283,7 @@ ul .list-function .number {
   z-index: 1;
   border-radius: 40px 40px 0px 0px;
   max-width: 1450px;
+  padding-bottom: 10px;
 }
 
 #main-menu #title-menu {
@@ -289,6 +297,7 @@ ul .list-function .number {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: Shrikhand, "cursive";
 }
 
 #main-menu #contenu-menu {
@@ -342,7 +351,7 @@ ul .list-function .number {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
+  margin: 20px auto;
   position: relative;
   bottom: 10px;
 }

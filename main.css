@@ -324,4 +324,25 @@ ul .list-function .number {
       grid-template-columns: 1fr 1fr;
   padding: 15px;
 }
+
+.btn-commander {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background-image: linear-gradient(0deg, #9356dc, #ff79da);
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.2rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=main.css.map */

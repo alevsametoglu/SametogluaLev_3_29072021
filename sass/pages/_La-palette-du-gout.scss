@@ -50,3 +50,8 @@
     }
   }
 }
+.btn-commander {
+  @include button;
+  margin: auto;
+  @include horizontal;
+}

@@ -23,8 +23,7 @@
   z-index: 1;
   border-radius: 40px 40px 0px 0px;
   max-width: 1450px;
-  height: auto;
-
+  //   height: 550px;
   #title-menu {
     padding: 1rem 2rem 0 1rem;
     display: flex;
@@ -52,6 +51,8 @@
 }
 .btn-commander {
   @include button;
-  margin: auto;
   @include horizontal;
+  margin: auto;
+  position: relative;
+  bottom: 10px;
 }

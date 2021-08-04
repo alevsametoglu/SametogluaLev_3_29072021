@@ -1,8 +1,8 @@
 @import "./base/typography";
 @import "./base/reset";
 
-@import "./abstracts/mixins";
-@import "./abstracts/variables";
+@import "./utils/mixins";
+@import "./utils/variables";
 
 @import "./layout/header";
 @import "./layout/footer";

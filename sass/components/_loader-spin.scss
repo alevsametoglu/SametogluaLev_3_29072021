@@ -1,0 +1,25 @@
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  z-index: 10000;
+  animation: hide-spinner 3s 1;
+  visibility: hidden;
+
+  .loader-circle {
+    border: 10px solid $color-primary;
+    border-top: 10px solid $color-tertiary;
+    border-bottom: 10px solid $color-secondary;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation: spin linear 1.5s 2;
+  }
+}

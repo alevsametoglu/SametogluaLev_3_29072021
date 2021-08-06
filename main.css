@@ -51,6 +51,138 @@ body {
   margin: 0px;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes hide-spinner {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes hide-spinner {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes vertical {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes vertical {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.delay-0 {
+  -webkit-animation: vertical 0.6s linear 1;
+          animation: vertical 0.6s linear 1;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delay-1 {
+  -webkit-animation: vertical 0.6s linear 1;
+          animation: vertical 0.6s linear 1;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delay-2 {
+  -webkit-animation: vertical 0.6s linear 1;
+          animation: vertical 0.6s linear 1;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delay-3 {
+  -webkit-animation: vertical 0.6s linear 1;
+          animation: vertical 0.6s linear 1;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
 h1 {
   text-align: center;
   color: black;
@@ -128,7 +260,12 @@ footer a {
   border-radius: 25px;
   color: white;
   font-size: 1.2rem;
+  cursor: pointer;
   margin: 20px;
+}
+
+.function {
+  padding: 15px 35px;
 }
 
 ul {
@@ -136,6 +273,13 @@ ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 785px) {
+  ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 635px) {
@@ -166,6 +310,14 @@ ul .list-function {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: relative;
+}
+
+ul .list-function:hover {
+  background-color: #f2eafb;
+}
+
+ul .list-function:hover i {
+  color: #9356dc;
 }
 
 ul .list-function .number {
@@ -237,15 +389,14 @@ ul .list-function .number {
 }
 
 #pages .cards a .name-resturants {
-  position: relative;
   line-height: 25px;
   padding: 20px;
-}
-
-#pages .cards a .like-icon {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-title {
@@ -309,6 +460,13 @@ ul .list-function .number {
           column-gap: 20px;
 }
 
+@media (max-width: 785px) {
+  #main-menu #contenu-menu {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 635px) {
   #main-menu #contenu-menu {
     -ms-grid-columns: 1fr;
@@ -318,6 +476,7 @@ ul .list-function .number {
 
 #main-menu #contenu-menu .name-menu {
   margin-left: 20px;
+  font-weight: 400;
 }
 
 #main-menu #contenu-menu article {
@@ -343,6 +502,7 @@ ul .list-function .number {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  cursor: pointer;
 }
 
 #main-menu #contenu-menu article .menu-info {
@@ -431,6 +591,7 @@ ul .list-function .number {
   border-radius: 25px;
   color: white;
   font-size: 1.2rem;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,6 +604,14 @@ ul .list-function .number {
   margin: 20px auto;
   position: relative;
   bottom: 10px;
+}
+
+@media (max-width: 635px) {
+  .btn-commander {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
 }
 
 .loader {
@@ -473,43 +642,33 @@ ul .list-function .number {
           animation: spin linear 1.5s 2;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.like-icon {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
 }
 
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.like-icon:hover {
+  color: #ff79da;
 }
 
-@-webkit-keyframes hide-spinner {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
+.like-icon .not-liked {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-@keyframes hide-spinner {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
+.like-icon .liked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff79da;
+  z-index: 2;
+  opacity: 0;
+}
+
+.like-icon .liked:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

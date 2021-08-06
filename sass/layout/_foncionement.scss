@@ -1,5 +1,12 @@
+.function {
+  padding: 15px 35px;
+}
+
 ul {
   @include grid3Column;
+  @media (max-width: 785px) {
+    grid-template-columns: 1fr;
+  }
   @media (max-width: 635px) {
     grid-template-columns: 1fr;
   }
@@ -14,6 +21,12 @@ ul {
     @include horizontal;
     justify-content: flex-start;
     position: relative;
+    &:hover {
+      background-color: lighten($color-primary, $amount: 35%);
+      i {
+        color: $color-primary;
+      }
+    }
 
     .number {
       background-color: $color-primary;

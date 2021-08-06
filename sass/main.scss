@@ -3,6 +3,8 @@
 
 @import "./utils/mixins";
 @import "./utils/variables";
+@import "./utils/keyframes";
+@import "./utils/animation";
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -12,4 +14,4 @@
 
 @import "./pages/menu-page";
 @import "./components/loader-spin/";
-@import "./components/keyframes";
+@import "./components/like-button";

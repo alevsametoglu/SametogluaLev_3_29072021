@@ -1,0 +1,27 @@
+.like-icon {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-secondary;
+  }
+
+  .not-liked {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .liked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $color-secondary;
+    z-index: 2;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

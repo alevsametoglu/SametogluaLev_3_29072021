@@ -1,0 +1,16 @@
+.delay-0 {
+  @include animation;
+  animation-delay: 0.2s;
+}
+.delay-1 {
+  @include animation;
+  animation-delay: 0.4s;
+}
+.delay-2 {
+  @include animation;
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  @include animation;
+  animation-delay: 0.8s;
+}

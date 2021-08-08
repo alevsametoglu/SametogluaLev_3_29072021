@@ -14,3 +14,10 @@
   @include animation;
   animation-delay: 0.8s;
 }
+
+.resturants:hover {
+  transform: scale(1.02);
+}
+button:hover {
+  transform: scale(1.05);
+}

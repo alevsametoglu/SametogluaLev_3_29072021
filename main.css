@@ -183,6 +183,16 @@ body {
           animation-delay: 0.8s;
 }
 
+.resturants:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 h1 {
   text-align: center;
   color: black;

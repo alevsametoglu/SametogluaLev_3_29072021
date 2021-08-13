@@ -675,6 +675,10 @@ ul .list-function .number {
   left: 0;
   color: #ff79da;
   z-index: 2;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
 }
 
